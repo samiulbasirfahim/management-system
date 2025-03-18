@@ -22,7 +22,7 @@
 <div class="drawer lg:drawer-open">
 	<input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
 	<div class="drawer-content flex flex-col items-center justify-center">
-		<label for="my-drawer-2" class="fixed top-[50%] left-0 lg:hidden cursor-grab z-[999]">
+		<label for="my-drawer-2" class="fixed top-[50%] left-0 z-[999] cursor-grab lg:hidden">
 			<Icon icon="memory:box-light-vertical-menu-right" font-size="30" />
 		</label>
 		{@render children()}
@@ -60,16 +60,3 @@
 	</div>
 </div>
 
-<!-- Put this part before </body> tag -->
-<input type="checkbox" id="my-modal" class="modal-toggle" />
-<div class="modal">
-	<div class="modal-box">
-		<h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
-		<p class="py-4">
-			You've been selected for a chance to get one year of subscription to use Wikipedia for free!
-		</p>
-		<div class="modal-action">
-			<label for="my-modal" class="btn">Yay!</label>
-		</div>
-	</div>
-</div>
